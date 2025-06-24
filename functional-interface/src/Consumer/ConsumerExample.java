@@ -3,6 +3,7 @@ package Consumer;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 public class ConsumerExample {
 
@@ -15,11 +16,9 @@ public class ConsumerExample {
             }
         };
 
-        numeros.forEach(numero -> {
-            if (numero % 2 == 0) {
-                System.out.println(numero);
-            }
-        });
+        numeros.stream()
+                .filter( numero -> numero % 2 == 0)
+                .forEach(System.out::println);
     }
 
 }
