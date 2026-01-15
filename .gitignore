@@ -1,16 +1,6 @@
-# Compiled class file
+# --- Compilados e Binários ---
 *.class
-
-# Log file
 *.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
 *.nar
@@ -18,7 +8,36 @@
 *.zip
 *.tar.gz
 *.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# --- Pastas de Saída (Build) ---
+# Onde o Java coloca os arquivos compilados
+bin/
+out/
+target/
+build/
+
+# --- IntelliJ IDEA ---
+# Resolve o problema do .idea/material_theme_project_new.xml e outros
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# --- VS Code ---
+.vscode/
+
+# --- Eclipse ---
+.metadata/
+.classpath
+.project
+.settings/
+
+# --- BlueJ ---
+*.ctxt
+
+# --- Sistema Operacional ---
+.DS_Store
+Thumbs.db
